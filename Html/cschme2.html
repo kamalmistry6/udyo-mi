@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+
+<html
+  lang="en"
+  class="light-style layout-menu-fixed"
+  dir="ltr"
+  data-theme="theme-default"
+  data-assets-path="../../assets/"
+  data-template="horizontal-menu-template">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+
+    <title>SchemesCentral</title>
+
+    <meta name="description" content="" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../../assets/img/favicon/favicon.ico" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet" />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="../../assets/vendor/fonts/fontawesome.css" />
+    <link rel="stylesheet" href="../../assets/vendor/fonts/tabler-icons.css" />
+    <link rel="stylesheet" href="../../assets/vendor/fonts/flag-icons.css" />
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="../../assets/vendor/css/rtl/core.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="../../assets/vendor/css/rtl/theme-default.css" class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="../../assets/css/demo.css" />
+
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="../../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="../../assets/vendor/libs/node-waves/node-waves.css" />
+    <link rel="stylesheet" href="../../assets/vendor/libs/typeahead-js/typeahead.css" />
+
+    <!-- Page CSS -->
+
+    <!-- Helpers -->
+    <script src="../../assets/vendor/js/helpers.js"></script>
+
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Template customizer: To hide customizer set displayCustomizer value false in config.js.  -->
+    <script src="../../assets/vendor/js/template-customizer.js"></script>
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="../../assets/js/config.js"></script>
+  </head>
+
+  <body>
+    <!-- Layout wrapper -->
+    <div class="layout-wrapper layout-navbar-full layout-horizontal layout-without-menu">
+      <div class="layout-container">
+        <!-- Navbar -->
+
+        <nav class="layout-navbar navbar navbar-expand-xl align-items-center bg-navbar-theme" id="layout-navbar">
+          <div class="container-xxl">
+            <div class="navbar-brand app-brand demo d-none d-xl-flex py-0 me-4">
+              <a href="index.html" class="app-brand-link gap-2">
+                <span class="app-brand-logo demo">
+                  <svg width="32" height="22" viewBox="0 0 32 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M0.00172773 0V6.85398C0.00172773 6.85398 -0.133178 9.01207 1.98092 10.8388L13.6912 21.9964L19.7809 21.9181L18.8042 9.88248L16.4951 7.17289L9.23799 0H0.00172773Z"
+                      fill="#7367F0" />
+                    <path
+                      opacity="0.06"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M7.69824 16.4364L12.5199 3.23696L16.5541 7.25596L7.69824 16.4364Z"
+                      fill="#161616" />
+                    <path
+                      opacity="0.06"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M8.07751 15.9175L13.9419 4.63989L16.5849 7.28475L8.07751 15.9175Z"
+                      fill="#161616" />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M7.77295 16.3566L23.6563 0H32V6.88383C32 6.88383 31.8262 9.17836 30.6591 10.4057L19.7824 22H13.6938L7.77295 16.3566Z"
+                      fill="#7367F0" />
+                  </svg>
+                </span>
+                <span class="app-brand-text demo menu-text fw-bold">Udyo-Mi</span>
+              </a>
+
+              <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-xl-none">
+                <i class="ti ti-x ti-sm align-middle"></i>
+              </a>
+            </div>
+
+            <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
+              <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
+                <i class="ti ti-menu-2 ti-sm"></i>
+              </a>
+            </div>
+
+            <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+              <ul class="navbar-nav flex-row align-items-center ms-auto">
+                <!-- Language -->
+                <!-- <li class="nav-item dropdown-language dropdown me-2 me-xl-0">
+                  <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
+                    <i class="fi fi-us fis rounded-circle me-1 fs-3"></i>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end">
+                    <li>
+                      <a class="dropdown-item" href="javascript:void(0);" data-language="en">
+                        <i class="fi fi-us fis rounded-circle me-1 fs-3"></i>
+                        <span class="align-middle">English</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="javascript:void(0);" data-language="fr">
+                        <i class="fi fi-fr fis rounded-circle me-1 fs-3"></i>
+                        <span class="align-middle">French</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="javascript:void(0);" data-language="de">
+                        <i class="fi fi-de fis rounded-circle me-1 fs-3"></i>
+                        <span class="align-middle">German</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="javascript:void(0);" data-language="pt">
+                        <i class="fi fi-pt fis rounded-circle me-1 fs-3"></i>
+                        <span class="align-middle">Portuguese</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li> -->
+                <!--/ Language -->
+
+                <!-- Search -->
+                <li class="nav-item navbar-search-wrapper me-2 me-xl-0">
+                  <a class="nav-link search-toggler" href="javascript:void(0);">
+                    <i class="ti ti-search ti-md"></i>
+                  </a>
+                </li>
+                <!-- /Search -->
+
+                <!-- Style Switcher -->
+                <li class="nav-item me-2 me-xl-0">
+                  <a class="nav-link style-switcher-toggle hide-arrow" href="javascript:void(0);">
+                    <i class="ti ti-md"></i>
+                  </a>
+                </li>
+                <!--/ Style Switcher -->
+
+                <!-- Quick links  -->
+                <!-- <li class="nav-item dropdown-shortcuts navbar-dropdown dropdown me-2 me-xl-0">
+                  <a
+                    class="nav-link dropdown-toggle hide-arrow"
+                    href="javascript:void(0);"
+                    data-bs-toggle="dropdown"
+                    data-bs-auto-close="outside"
+                    aria-expanded="false">
+                    <i class="ti ti-layout-grid-add ti-md"></i>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-end py-0">
+                    <div class="dropdown-menu-header border-bottom">
+                      <div class="dropdown-header d-flex align-items-center py-3">
+                        <h5 class="text-body mb-0 me-auto">Shortcuts</h5>
+                        <a
+                          href="javascript:void(0)"
+                          class="dropdown-shortcuts-add text-body"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="top"
+                          title="Add shortcuts"
+                          ><i class="ti ti-sm ti-apps"></i
+                        ></a>
+                      </div>
+                    </div>
+                    <div class="dropdown-shortcuts-list scrollable-container">
+                      <div class="row row-bordered overflow-visible g-0">
+                        <div class="dropdown-shortcuts-item col">
+                          <span class="dropdown-shortcuts-icon rounded-circle mb-2">
+                            <i class="ti ti-calendar fs-4"></i>
+                          </span>
+                          <a href="app-calendar.html" class="stretched-link">Calendar</a>
+                          <small class="text-muted mb-0">Appointments</small>
+                        </div>
+                        <div class="dropdown-shortcuts-item col">
+                          <span class="dropdown-shortcuts-icon rounded-circle mb-2">
+                            <i class="ti ti-file-invoice fs-4"></i>
+                          </span>
+                          <a href="app-invoice-list.html" class="stretched-link">Invoice App</a>
+                          <small class="text-muted mb-0">Manage Accounts</small>
+                        </div>
+                      </div>
+                      <div class="row row-bordered overflow-visible g-0">
+                        <div class="dropdown-shortcuts-item col">
+                          <span class="dropdown-shortcuts-icon rounded-circle mb-2">
+                            <i class="ti ti-users fs-4"></i>
+                          </span>
+                          <a href="app-user-list.html" class="stretched-link">User App</a>
+                          <small class="text-muted mb-0">Manage Users</small>
+                        </div>
+                        <div class="dropdown-shortcuts-item col">
+                          <span class="dropdown-shortcuts-icon rounded-circle mb-2">
+                            <i class="ti ti-lock fs-4"></i>
+                          </span>
+                          <a href="app-access-roles.html" class="stretched-link">Role Management</a>
+                          <small class="text-muted mb-0">Permission</small>
+                        </div>
+                      </div>
+                      <div class="row row-bordered overflow-visible g-0">
+                        <div class="dropdown-shortcuts-item col">
+                          <span class="dropdown-shortcuts-icon rounded-circle mb-2">
+                            <i class="ti ti-chart-bar fs-4"></i>
+                          </span>
+                          <a href="index.html" class="stretched-link">Dashboard</a>
+                          <small class="text-muted mb-0">User Profile</small>
+                        </div>
+                        <div class="dropdown-shortcuts-item col">
+                          <span class="dropdown-shortcuts-icon rounded-circle mb-2">
+                            <i class="ti ti-settings fs-4"></i>
+                          </span>
+                          <a href="pages-account-settings-account.html" class="stretched-link">Setting</a>
+                          <small class="text-muted mb-0">Account Settings</small>
+                        </div>
+                      </div>
+                      <div class="row row-bordered overflow-visible g-0">
+                        <div class="dropdown-shortcuts-item col">
+                          <span class="dropdown-shortcuts-icon rounded-circle mb-2">
+                            <i class="ti ti-help fs-4"></i>
+                          </span>
+                          <a href="pages-help-center-landing.html" class="stretched-link">Help Center</a>
+                          <small class="text-muted mb-0">FAQs & Articles</small>
+                        </div>
+                        <div class="dropdown-shortcuts-item col">
+                          <span class="dropdown-shortcuts-icon rounded-circle mb-2">
+                            <i class="ti ti-square fs-4"></i>
+                          </span>
+                          <a href="modal-examples.html" class="stretched-link">Modals</a>
+                          <small class="text-muted mb-0">Useful Popups</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li> -->
+                <!-- Quick links -->
+
+                <!-- Notification -->
+                <li class="nav-item dropdown-notifications navbar-dropdown dropdown me-3 me-xl-1">
+                  <a
+                    class="nav-link dropdown-toggle hide-arrow"
+                    href="javascript:void(0);"
+                    data-bs-toggle="dropdown"
+                    data-bs-auto-close="outside"
+                    aria-expanded="false">
+                    <i class="ti ti-bell ti-md"></i>
+                    <span class="badge bg-danger rounded-pill badge-notifications">5</span>
+                  </a>
+                 
+                </li>
+                <!--/ Notification -->
+
+                <!-- User -->
+                <li class="nav-item navbar-dropdown dropdown-user dropdown">
+                  <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
+                    <div class="avatar avatar-online">
+                      <img src="../../assets/img/avatars/1.png" alt class="h-auto rounded-circle" />
+                    </div>
+                  </a>
+                
+            </div>
+
+            <!-- Search Small Screens -->
+            <div class="navbar-search-wrapper search-input-wrapper container-xxl d-none">
+              <input
+                type="text"
+                class="form-control search-input border-0"
+                placeholder="Search..."
+                aria-label="Search..." />
+              <i class="ti ti-x ti-sm search-toggler cursor-pointer"></i>
+            </div>
+          </div>
+        </nav>
+
+        <!-- / Navbar -->
+
+        <!-- Layout container -->
+        <div class="layout-page">
+          <!-- Content wrapper -->
+          <div class="content-wrapper">
+            <!-- Menu -->
+           
+            <!-- / Menu -->
+
+            <!-- Content -->
+
+            <div class="container-xxl flex-grow-1 container-p-y">
+              <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light"></span>NATIONAL SMALL INDUSTRIES CORPORATION (NSIC)</h4>
+
+              <!-- Examples -->
+             
+              <!-- Examples -->
+
+              <!-- Content types -->
+              
+
+             
+
+             
+              <!--/ Content types -->
+
+              <!-- Text alignment -->
+             
+              <!--/ Text alignment -->
+
+              <!-- Navigation -->
+             
+              <!--/ Navigation -->
+
+              <!-- Images -->
+            
+              <!--/ Images -->
+
+              <!-- Horizontal -->
+             
+              <!--/ Horizontal -->
+              <!-- <h5 class="pb-1 mb-4">Text alignment</h5> -->
+              <img src="../../assets/img/avatars/ncic.jpeg" style="float: left; height: 500px;width: 450px;"></img>
+
+
+
+              <div class="row mb-5" >
+                <div class="col-md-15 col-lg-15 " >
+                  <div class="card mb-3" style="background-color: #6198c280;">
+                    <div class="card-body">
+                      <h5 class="card-title" style=" text-align:center;font-size: 25px; border-radius:7px;font-weight: 500;">Entrepreneurship Orientation Programme (EOP)  </h5>
+                      <p class="card-text" >Purpose of EOP is to create awareness among the students for setting up of new Enterprise after completion of their studies instead of searching for jobs only. This program makes participants familiar about role and importance of MSMEs in Indian Economy, process of setting up of Enterprise, preparing Project Reports, Identifying marketing possibilities as well as with the issues regarding various statutory requirements such as Income Tax, VAT etc.  </p>
+                     
+                      <a href="https://www.nsic.co.in/NTSC/EOP" class="btn btn-primary" target="_blank">Visit Schemes  </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-15 col-lg-15 " >
+                  <div class="card mb-3" style="background-color: #6198c280;">
+                    <div class="card-body">
+                      <h5 class="card-title" style=" text-align:center;font-size: 25px; border-radius:7px;font-weight: 500;">Single Point Registration Scheme (Completely Online) </h5>
+                      <p class="card-text" >NSIC enlists Micro & Small Enterprises (MSEs) under Single Point Registration scheme (SPRS) for participation in Government Purchases. The units enlisted under Single Point Registration Scheme of NSIC are eligible to get the benefits under Public Procurement Policy for Micro & Small Enterprises (MSEs) Order 2012 as notified by the Government of India, Ministry of Micro Small & Medium Enterprises, New Delhi vide Gazette Notification dated 23.03.2012 and amendment vide order no. S.O. 5670(E) dated 9th November 2018.The enlistment under SPRS is completely online.   </p>
+                      
+                      <a href=" https://www.nsic.co.in/Schemes/Single-Point-Registration.aspx" class="btn btn-primary" target="_blank">Visit Schemes  </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-15 col-lg-15 " >
+                  <div class="card mb-3" style="background-color: #6198c280;">
+                    <div class="card-body">
+                      <h5 class="card-title" style=" text-align:center;font-size: 25px; border-radius:7px;font-weight: 500;">Credit Facilitation Through Bank </h5>
+                      <p class="card-text" >  To meet the credit requirements of MSME units, NSIC has entered into a Memorandum of Understanding with various Nationalized and Private Sector Banks. Through syndication with banks, NSIC facilitates credit support to MSMEs (fund based or non-fund based limits) from these banks. Any MSME Unit can approach directly to any of our nearest branch office and submit their request application for loan requirement from any of these banks under our tie up agreement. The NSIC official sitting at the branch will provide hand holding support to the MSME unit by assisting them in completion of all documents as required by the bank for further submission of the credit proposal to the bank.  </p>
+                    
+                      <a href="https://www.nsic.co.in/Schemes/Credit-Facilitation-Through-Bank.aspx" class="btn btn-primary" target="_blank">Visit Schemes  </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-15 col-lg-15 " >
+                  <div class="card mb-3" style="background-color: #6198c280;">
+                    <div class="card-body">
+                      <h5 class="card-title" style=" text-align:center;font-size: 25px; border-radius:7px;font-weight: 500;">RMA against Bank Guarantee </h5>
+                      <p class="card-text" > Raw Material Assistance Scheme aims at helping MSMEs by way of financing the purchase of Raw Material (Both indigenous & imported). This gives an opportunity to MSMEs to focus better on manufacturing quality products</p>
+                      
+                      <a href=" https://www.nsic.co.in/Schemes/Raw-Material-Against-BG.aspx" class="btn btn-primary" target="_blank">Visit Schemes  </a>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col-md-15 col-lg-15 " >
+                  <div class="card mb-3" style="background-color: #6198c280;">
+                    <div class="card-body">
+                      <h5 class="card-title" style=" text-align:center;font-size: 25px; border-radius:7px;font-weight: 500;">Consortia & Tender Marketing </h5>
+                      <p class="card-text" > Promotion of the product of Micro and Small Entrepreneurs is one of the major objective of the Corporation. In the present competitive scenario a need has been felt to facilitate Micro and Small Enterprises to market their goods / services individually or collectively through ‘Consortium’. Accordingly, the scheme for promoting the products of the MSEs has been reviewed in 2011 & named as “Consortia and Tender Marketing Scheme”.   </p>
+                   
+                      <a href=" https://www.nsic.co.in/Schemes/Consortia-Tender-Marketing.aspx" class="btn btn-primary" target="_blank">Visit Schemes  </a>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col-md-15 col-lg-15 " >
+                    <div class="card mb-3" style="background-color: #6198c280;">
+                      <div class="card-body">
+                        <h5 class="card-title" style=" text-align:center;font-size: 25px; border-radius:7px;font-weight: 500;">Digital Services Facilitation through Aggregation Services. </h5>
+                        <p class="card-text" >   Over the last few decades, Information, Communication and Technology has taken on a significant role for business activities responsible for driving growth. In most cases, it has become a key enabler for competitiveness, better quality of service, lower processing costs or even better support for MIS. In some cases, making the right choices and investing in the right digital technologies is the key to success.  </p>
+                     
+                        <a href="https://www.nsic.co.in/Schemes/DigitalServices" class="btn btn-primary" target="_blank">Visit Schemes  </a>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="col-md-15 col-lg-15 " >
+                    <div class="card mb-3" style="background-color: #6198c280;">
+                      <div class="card-body">
+                        <h5 class="card-title" style=" text-align:center;font-size: 25px; border-radius:7px;font-weight: 500;">National Scheduled Caste and Scheduled Tribe Hub</h5>
+                        <p class="card-text" >   The Hub would operate out of the National Small Industries Corporation (NSIC) headquartered in Delhi, supported by a special cell created for this purpose. All new and existing SC/ST entrepreneurs would be registered on the MSME Databank (www.msmedatabank.in) of the Ministry of MSME that would form a reliable database to enhance accessibility for the procurement agencies. A separate website www.scsthub.in has been launched to apprise the stakeholders about the activities of the Hub.   </p>
+                     
+                        <a href="https://www.nsic.co.in/Schemes/National-Scheduled-Caste-and-Scheduled-Tribe-Hub" class="btn btn-primary" target="_blank">Visit Schemes  </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  
+                 
+
+                
+                
+              </div>
+
+
+              <!-- Style variation -->
+  
+             
+              <!-- Outline -->
+              
+              <!--/ Style variation -->
+
+              <!-- Card layout -->
+              
+
+              <!-- Card Groups -->
+           
+
+              <!-- Grid Card -->
+           
+
+              <!-- Masonry -->
+             
+              <!--/ Card layout -->
+            </div>
+            <!--/ Content -->
+
+            <!-- Footer -->
+            <footer class="content-footer footer bg-footer-theme">
+              <div class="container-xxl">
+                <div
+                  class="footer-container d-flex align-items-center justify-content-between py-2 flex-md-row flex-column">
+                  <div>
+                  Udyo-Mi  ©
+                    <script>
+                      document.write(new Date().getFullYear());
+                    </script>
+                    <!-- , made with ❤️ by <a href="https://pixinvent.com" target="_blank" class="fw-semibold">Pixinvent</a> -->
+                  </div>
+                  <div>
+                    <a href="https://themeforest.net/licenses/standard" class="footer-link me-4" target="_blank"
+                      >License</a
+                    >
+                    <a href="https://1.envato.market/pixinvent_portfolio" target="_blank" class="footer-link me-4"
+                      >More Themes</a
+                    >
+
+                    <a
+                      href="https://demos.pixinvent.com/vuexy-html-admin-template/documentation/"
+                      target="_blank"
+                      class="footer-link me-4"
+                      >Documentation</a
+                    >
+
+                    <a href="https://pixinvent.ticksy.com/" target="_blank" class="footer-link d-none d-sm-inline-block"
+                      >Support</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </footer>
+            <!-- / Footer -->
+
+            <div class="content-backdrop fade"></div>
+          </div>
+          <!--/ Content wrapper -->
+        </div>
+
+        <!--/ Layout container -->
+      </div>
+    </div>
+
+    <!-- Overlay -->
+    <div class="layout-overlay layout-menu-toggle"></div>
+
+    <!-- Drag Target Area To SlideIn Menu On Small Screens -->
+    <div class="drag-target"></div>
+
+    <!--/ Layout wrapper -->
+
+    <!-- Core JS -->
+    <!-- build:js assets/vendor/js/core.js -->
+    <script src="../../assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="../../assets/vendor/libs/popper/popper.js"></script>
+    <script src="../../assets/vendor/js/bootstrap.js"></script>
+    <script src="../../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="../../assets/vendor/libs/node-waves/node-waves.js"></script>
+
+    <script src="../../assets/vendor/libs/hammer/hammer.js"></script>
+    <script src="../../assets/vendor/libs/i18n/i18n.js"></script>
+    <script src="../../assets/vendor/libs/typeahead-js/typeahead.js"></script>
+
+    <script src="../../assets/vendor/js/menu.js"></script>
+    <!-- endbuild -->
+
+    <!-- Vendors JS -->
+    <script src="../../assets/vendor/libs/masonry/masonry.js"></script>
+
+    <!-- Main JS -->
+    <script src="../../assets/js/main.js"></script>
+
+    <!-- Page JS -->
+  </body>
+</html>

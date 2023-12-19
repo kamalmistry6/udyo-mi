@@ -1,0 +1,329 @@
+/*
+* demo.css
+* File include item demo only specific css only
+******************************************************************************/
+
+ /*setting the position relative
+         property to the main container*/
+         /* .gfg { */
+          /* margin: 3%; */
+          /* position: relative; */
+      /* } */
+
+      /*This CSS code is defining the
+      styles for a container that holds text*/
+      /* .gfg image{
+        width: 100%;
+        height: 100px;
+      } */
+
+/* nac drop down  */
+/* Navbar container */
+
+/* sexy css */
+
+
+  .card-body h5{
+    color: #030303;
+  }
+.card-body p{
+  color: #030303;
+}
+
+
+
+
+
+.mydrop {
+  display: flex;
+  font-family: Arial;
+  margin-left: 20px;
+
+}
+
+/* Links inside the navbar */
+.mydrop a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdowne {
+  float: left;
+  overflow: hidden;
+  padding-left: 8px;
+  
+}
+
+/* Dropdown button */
+.dropdowne .dropbtne {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 10px 12px;
+  background-color: #fafafb;
+  font-family: inherit;
+  margin: 0;
+  border-radius: 7px;
+}
+
+/* Add a red background color to navbar links on hover */
+.mydrop a:hover, .dropdowne:hover .dropbtne {
+  background-color: #a49fdb;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-contente {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-contente a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-contente a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdowne:hover .dropdown-contente {
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ .text-container {
+          position: absolute;
+          color: #0c0c0c;
+          left: 6rem;
+          top: 14rem;
+          /* background-color: rgb(41, 41, 41, 0.8); */
+          padding: 0 1rem;
+          font-weight:bold;
+      }
+
+
+/* Dropdown list */
+.dropbtn {
+  background-color: #7367f0;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 7px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute; 
+  background-color: #f1f1f1;
+  min-width: 260px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block; top: -560%;margin-left: 50px;}
+
+.dropdown:hover .dropbtn {background-color: #210eef;}
+
+@media screen and (max-width: 600px) {
+  .dropdown-content {
+    width: 100%;
+    box-shadow: none;
+  }
+}
+
+
+/* image slider code  */
+@keyframes slidy {
+  0% { left: 0%; }
+  20% { left: 0%; }
+  25% { left: -100%; }
+  45% { left: -100%; }
+  50% { left: -200%; }
+  70% { left: -200%; }
+  75% { left: -300%; }
+  95% { left: -300%; }
+  /* 100% { left: -400%; } */
+}
+
+body { margin: 0; } 
+div#slider { overflow: hidden;  }
+div#slider figure img { width: 5%; float: left; }
+div#slider figure { 
+  display: flex;
+  margin-bottom: 500px;
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 30s slidy infinite; 
+}
+
+   
+
+
+
+
+
+
+
+.light-style .menu .app-brand.demo {
+  height: 64px;
+}
+
+.dark-style .menu .app-brand.demo {
+  height: 64px;
+}
+
+.app-brand-logo.demo {
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -ms-flexbox;
+  display: flex;
+  width: 34px;
+  height: 24px;
+}
+
+.app-brand-logo.demo svg {
+  width: 35px;
+  height: 24px;
+}
+
+.app-brand-text.demo {
+  font-size: 1.375rem;
+}
+
+/* ! For .layout-navbar-fixed added fix padding top tpo .layout-page */
+.layout-navbar-fixed .layout-wrapper:not(.layout-without-menu) .layout-page {
+  padding-top: 64px !important;
+}
+.layout-navbar-fixed .layout-wrapper:not(.layout-horizontal):not(.layout-without-menu) .layout-page {
+  padding-top: 78px !important;
+}
+/* Navbar page z-index issue solution */
+.content-wrapper .navbar {
+  z-index: auto;
+}
+
+/*
+* Content
+******************************************************************************/
+
+.demo-blocks > * {
+  display: block !important;
+}
+
+.demo-inline-spacing > * {
+  margin: 1rem 0.375rem 0 0 !important;
+}
+
+/* ? .demo-vertical-spacing class is used to have vertical margins between elements. To remove margin-top from the first-child, use .demo-only-element class with .demo-vertical-spacing class. For example, we have used this class in forms-input-groups.html file. */
+.demo-vertical-spacing > * {
+  margin-top: 1rem !important;
+  margin-bottom: 0 !important;
+}
+.demo-vertical-spacing.demo-only-element > :first-child {
+  margin-top: 0 !important;
+}
+
+.demo-vertical-spacing-lg > * {
+  margin-top: 1.875rem !important;
+  margin-bottom: 0 !important;
+}
+.demo-vertical-spacing-lg.demo-only-element > :first-child {
+  margin-top: 0 !important;
+}
+
+.demo-vertical-spacing-xl > * {
+  margin-top: 5rem !important;
+  margin-bottom: 0 !important;
+}
+.demo-vertical-spacing-xl.demo-only-element > :first-child {
+  margin-top: 0 !important;
+}
+
+.rtl-only {
+  display: none !important;
+  text-align: left !important;
+  direction: ltr !important;
+}
+
+[dir='rtl'] .rtl-only {
+  display: block !important;
+}
+
+/*
+* Layout demo
+******************************************************************************/
+
+.layout-demo-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+.layout-demo-placeholder img {
+  width: 900px;
+}
+.layout-demo-info {
+  text-align: center;
+  margin-top: 1rem;
+}
